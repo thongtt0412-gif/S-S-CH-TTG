@@ -1,0 +1,7 @@
+{
+  "name": "TT GARMENT CASH FLOW PRO",
+  "description": "Hệ thống quản trị dòng tiền chuyên sâu cho TT GARMENT, tích hợp kiểm soát CFO, phân tích định phí/biến phí và tư vấn chiến lược AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
