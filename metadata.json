@@ -1,6 +1,9 @@
 {
-  "name": "TT GARMENT CASH FLOW PRO",
-  "description": "Hệ thống quản trị dòng tiền chuyên sâu cho TT GARMENT, tích hợp kiểm soát CFO, phân tích định phí/biến phí và tư vấn chiến lược AI.",
+  "name": "TTG Cash Flow Pro",
+  "short_name": "TTG CF",
+  "description": "Hệ thống quản trị dòng tiền cấp cao tích hợp AI Advisor dành riêng cho tập đoàn TT GARMENT.",
+  "version": "1.0.0",
+  "author": "TT GARMENT Finance",
   "requestFramePermissions": [
     "camera"
   ]

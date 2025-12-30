@@ -1,27 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>TTG Cash Flow Management</title>
-
-    <!-- SEO cơ bản -->
-    <meta
-      name="description"
-      content="Hệ thống quản trị dòng tiền, chi phí và doanh thu nội bộ TTG Group"
-    />
-    <meta name="author" content="TTG Group" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  </head>
-
-  <body>
-    <!-- Root React -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#002B3D">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <title>TT GARMENT | Cash Flow Pro - Hệ thống Quản trị Dòng tiền</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Giải pháp quản trị dòng tiền chuyên sâu dành cho TT GARMENT. Tích hợp AI Advisor, kiểm soát CFO và phân tích tài chính thông minh.">
+    <meta name="keywords" content="TT Garment, Quản lý dòng tiền, CFO Advisor, Kế toán doanh nghiệp, Cash Flow">
+    <meta name="author" content="TT GARMENT Finance Department">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TT GARMENT | Cash Flow Pro">
+    <meta property="og:description" content="Hệ thống quản trị tài chính nội bộ tích hợp AI cho tập đoàn TTG.">
+    <meta property="og:image" content="https://fonts.gstatic.com/s/i/shortterm/release/googlesymbols/hexagon/default/48px.svg">
+    
+    <!-- Performance: Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://esm.sh">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ttg: {
+                navy: '#002B3D',
+                grey: '#BEB8B5',
+                dark: '#001A25',
+                light: '#F8FAFC',
+                accent: '#BEB8B5'
+              }
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '3rem',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+            color: #002B3D;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        .ttg-navy-gradient {
+            background: linear-gradient(180deg, #002B3D 0%, #001A25 100%);
+        }
+        .ttg-glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .accounting-nums {
+            font-variant-numeric: tabular-nums;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #BEB8B5;
+            border-radius: 10px;
+        }
+        .ttg-card-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 43, 61, 0.08);
+        }
+        /* Mobile optimization */
+        @media (max-width: 640px) {
+            input, select, textarea {
+                font-size: 16px !important; /* Tránh zoom trên iOS khi focus */
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
     <div id="root"></div>
-
-    <!-- Entry Vite -->
-    <script type="module" src="/index.tsx"></script>
-  </body>
+</body>
 </html>
