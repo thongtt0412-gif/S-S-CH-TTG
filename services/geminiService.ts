@@ -4,7 +4,7 @@ import { Transaction } from "../types";
 
 export const getFinancialInsights = async (transactions: Transaction[]) => {
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
     
     // Prepare a condensed version of the data for the model to analyze
     const summaryData = transactions.map(t => ({
